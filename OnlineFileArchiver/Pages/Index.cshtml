@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h3>Выберите файл для загрузки</h3>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="uploadedFiles" required multiple/><br>
+    <select size="1" name="archiveType">
+        <option value="zip">zip</option>
+        <option value="rar">rar</option>
+    </select>
+    <input type="submit" value="Загрузить" />
+</form>
